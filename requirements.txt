@@ -1,6 +1,5 @@
 streamlit
-shapely
-geopandas
-panda
-geopy
+pandas
 csv
+folium
+streamlit_folium

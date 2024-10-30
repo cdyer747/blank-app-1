@@ -73,7 +73,7 @@ for postcode in data2:
                       ).add_to(m)
 
 # call to render Folium map in Streamlit
-st_data = st_folium(m, width=725)
+st_data = st_folium(m) #, width=725)
 
 #postcode = st.sidebar.text_input("Postcode", postcode[5])
 #postcode="sy1 2pn"

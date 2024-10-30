@@ -2,14 +2,16 @@ import streamlit as st
 from io import StringIO
 st.title("Ben's Bowling Greens")
 
-import streamlit as st
-from shapely.geometry import Point, Polygon
-import geopandas as gpd
-import pandas as pd
-import geopy
+#from shapely.geometry import Point, Polygon
+#import geopandas as gpd
+#import pandas as pd
+#import geopy
 
-from geopy.geocoders import Nominatim
-from geopy.extra.rate_limiter import RateLimiter
+#from geopy.geocoders import Nominatim
+#from geopy.extra.rate_limiter import RateLimiter
+
+import folium
+from streamlit_folium import st_folium
 
 import csv
 
@@ -58,11 +60,6 @@ df.drop("long", axis='columns', inplace=True)
 #st.write(data2)
 #map_data=[]
 
-
-import folium
-import streamlit as st
-
-from streamlit_folium import st_folium
 
 # center on Liberty Bell, add marker
 m = folium.Map(location=[52.714804, -2.7411505], zoom_start=6)

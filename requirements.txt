@@ -1,1 +1,6 @@
 streamlit
+shapely
+geopandas
+panda
+geopy
+csv

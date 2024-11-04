@@ -15,6 +15,16 @@ from streamlit_folium import st_folium
 
 import csv
 
+########################
+hide_st_style = “”"
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+“”"
+st.markdown(hide_st_style, unsafe_allow_html=True)
+#########################
 
 str_data =StringIO("""Country,Region,Town,Name,Street Address,Postcode,lat,long,Website,Email Address,Telephone
 UK,Shropshire,Shrewsbury,Shrewsbury Indoor Bowls Club,"Shrewsbury Sports Village, Sundorne Rd, Shrewsbury SY1 4RQ",SY1 4RQ,52.727485,-2.7197761,,,01743 361128

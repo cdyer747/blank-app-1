@@ -23,6 +23,14 @@ footer {visibility: hidden;}
 header {visibility: hidden;}
 </style>
 """
+
+hide_st_style = """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            </style>
+            """
+
 st.markdown(hide_st_style, unsafe_allow_html=True)
 #########################
 

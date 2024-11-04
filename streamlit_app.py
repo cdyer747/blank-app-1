@@ -16,13 +16,13 @@ from streamlit_folium import st_folium
 import csv
 
 ########################
-hide_st_style = “”"
+hide_st_style = """
 
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility: hidden;}
 
-“”"
+"""
 st.markdown(hide_st_style, unsafe_allow_html=True)
 #########################
 

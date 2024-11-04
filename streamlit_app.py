@@ -69,7 +69,7 @@ for postcode in data2:
     #print(postcode[6], postcode[7])
     
     if postcode[6] !="lat":
-        folium.Marker([str(postcode[6]), str(postcode[7])], popup=postcode[3]+"\n\n"+postcode[4],
+        folium.Marker([str(postcode[6]), str(postcode[7])], popup=postcode[3]+"\n\n"+postcode[4],max_width=len(postcode[3])*20
                      ).add_to(m)
 
 # call to render Folium map in Streamlit
